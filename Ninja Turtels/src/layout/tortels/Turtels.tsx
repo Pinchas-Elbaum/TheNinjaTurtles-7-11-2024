@@ -38,14 +38,14 @@ const Tortels = () => {
     if (itemsToOurOrder.includes(item)) { return setmessage("you have already selected this item") } 
 
     setitemsToOurOrder([...itemsToOurOrder, item])
-    localStorage.setItem("itemsToOurOrder", JSON.stringify(itemsToOurOrder))
+    localStorage.setItem("itemsToOurOrder", JSON.stringify([...itemsToOurOrder, item]))
 
     setmessage("")
   }
 
   const removeItem = (name: string) => {
     setitemsToOurOrder(itemsToOurOrder.filter((item) => item.name !== name))
-    localStorage.setItem("itemsToOurOrder", JSON.stringify(itemsToOurOrder))
+    localStorage.setItem("itemsToOurOrder", JSON.stringify(itemsToOurOrder.filter((item) => item.name !== name)))
     setOrderbackgroundcolor("yellow")
     setmessage("")
   }

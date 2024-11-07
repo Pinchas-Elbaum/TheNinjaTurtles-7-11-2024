@@ -1,74 +1,74 @@
-*
-{
-box-sizing: border-box;
-margin: 0;
-padding: 0;
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
 
 }
 
 body {
-font-family: 'Poppins', sans-serif;
-background-color: #f9f9f9;
-color: #333;
-display: flex;
-justify-content: center;
-align-items: center;
-min-height: 100vh;
-margin: 0;
+   font-family: 'Poppins', sans-serif;
+   background-color: #f9f9f9;
+   color: #333;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+   margin: 0;
 }
 
 .app-container {
-display: flex;
-flex-direction: column;
-max-height: 100vh;
-width: 100%;
-max-width: 1200px;
-background-color: #fff;
-box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-border-radius: 8px;
-overflow: hidden;
+   display: flex;
+   flex-direction: column;
+   max-height: 100vh;
+   width: 100%;
+   max-width: 1200px;
+   background-color: #fff;
+   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+   border-radius: 8px;
+   overflow: hidden;
 }
 
 header {
-background-color: #007acc;
-color: white;
-padding: 15px;
-text-align: center;
-font-size: 1.8em;
-font-weight: 600;
+   background-color: #007acc;
+   color: white;
+   padding: 15px;
+   text-align: center;
+   font-size: 1.8em;
+   font-weight: 600;
 }
 
 main {
-flex: 1;
-max-height: 100vh;
-display: flex;
-flex-direction: column;
-align-items: center;
-padding: 20px;
-overflow-y: auto;
-background-color: #fafafa;
+   flex: 1;
+   max-height: 100vh;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 20px;
+   overflow-y: auto;
+   background-color: #fafafa;
 }
 
 .card-list {
-display: flex;
-flex-wrap: wrap;
-gap: 20px;
-width: 100%;
-justify-content: center;
-padding-bottom: 20px;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 20px;
+   width: 100%;
+   justify-content: center;
+   padding-bottom: 20px;
 }
 
 .card {
-background-color: #fff;
-border: 1px solid #e0e0e0;
-border-radius: 8px;
-padding: 5px;
-text-align: center;
-width: 240px;
-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
-transition: transform 0.2s ease, box-shadow 0.2s ease;
-font-family: 'Poppins', sans-serif;
+   background-color: #fff;
+   border: 1px solid #e0e0e0;
+   border-radius: 8px;
+   padding: 5px;
+   text-align: center;
+   width: 240px;
+   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+   transition: transform 0.2s ease, box-shadow 0.2s ease;
+   font-family: 'Poppins', sans-serif;
 }
+
 .order-card {
    background-color: #b35abb;
    border: 1px solid #e0e0e0;
@@ -80,103 +80,106 @@ font-family: 'Poppins', sans-serif;
    box-shadow: 0px 2px 4px rgba(204, 152, 8, 0.05);
    transition: transform 0.2s ease, box-shadow 0.2s ease;
    font-family: 'Poppins', sans-serif;
-   }
+}
 
 .card h3 {
-margin-bottom: 10px;
-font-size: 1.2em;
-color: #333;
-font-weight: 500;
+   margin-bottom: 10px;
+   font-size: 1.2em;
+   color: #333;
+   font-weight: 500;
 }
 
 .card p {
-font-size: 1em;
-color: #555;
-margin-bottom: 15px;
+   font-size: 1em;
+   color: #555;
+   margin-bottom: 15px;
 }
 
 .card button {
-background-color: #e74c3c;
-color: white;
-border: none;
-border-radius: 4px;
-padding: 8px 16px;
-cursor: pointer;
-font-size: 0.9em;
-transition: background-color 0.3s ease;
+   background-color: #e74c3c;
+   color: white;
+   border: none;
+   border-radius: 4px;
+   padding: 8px 16px;
+   cursor: pointer;
+   font-size: 0.9em;
+   transition: background-color 0.3s ease;
 }
 
 .card button:hover {
-background-color: #c0392b;
+   background-color: #c0392b;
 }
 
 footer {
-background-color: #007acc;
-color: white;
-text-align: center;
-padding: 15px;
-font-size: 0.9em;
+   background-color: #007acc;
+   color: white;
+   text-align: center;
+   padding: 15px;
+   font-size: 0.9em;
 }
 
-form { 
-display: flex;
-flex-direction: column;
-gap: 20px;
+form {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
 }
 
 .form-group {
-display: flex;
-flex-direction: column;
+   display: flex;
+   flex-direction: column;
 }
 
 label {
-font-weight: 500;
-margin-bottom: 5px;
-color: #333;
+   font-weight: 500;
+   margin-bottom: 5px;
+   color: #333;
 }
 
 input[type="text"],
 input[type="email"],
-input[type="number"]
-
-{
-padding: 10px;
-border: 1px solid #ddd;
-border-radius: 5px;
-font-size: 1em;
-transition: border-color 0.3s ease;
+input[type="number"] {
+   padding: 10px;
+   border: 1px solid #ddd;
+   border-radius: 5px;
+   font-size: 1em;
+   transition: border-color 0.3s ease;
 }
 
 
 
 button {
-padding: 12px 20px;
-margin: 5px;
-background-color: #007acc;
-color: #fff;
-border: none;
-border-radius: 5px;
-font-size: 1em;
-font-weight: 600;
-cursor: pointer;
-transition: background-color 0.3s ease, transform 0.5s ease;
+   padding: 12px 20px;
+   margin: 5px;
+   background-color: #007acc;
+   color: #fff;
+   border: none;
+   border-radius: 5px;
+   font-size: 1em;
+   font-weight: 600;
+   cursor: pointer;
+   transition: background-color 0.3s ease, transform 0.5s ease;
 }
 
 button:hover {
-background-color: #005fa3;
+   background-color: #005fa3;
 }
 
 button:active {
-transform: scale(0.98);
+   transform: scale(0.98);
 }
-.turtel img  {
-    width: 200px;
-    height: 100%;
-    border-radius: 0;
- }
 
- img {
-    width: 100px;
-    height: 75px;
-    border-radius: 10px;
- }
+.turtel img {
+   width: 200px;
+   height: 100%;
+   border-radius: 0;
+}
+
+img {
+   width: 100px;
+   height: 75px;
+   border-radius: 10px;
+}
+
+ul {
+   list-style-type: none;
+}
